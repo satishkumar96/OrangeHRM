@@ -1,4 +1,6 @@
 from selenium.webdriver.common.by import By
+
+from Configuration.DataFromExcel import TestData
 from Pages.BasePage import BasePage
 
 
@@ -17,9 +19,9 @@ class LoginPage(BasePage):
 
     def do_valid_login(self):
         self.do_clear(self.USERNAME)
-        self.do_sendKeys(self.USERNAME, self.readData_fromExcel("D:\TestData.xlsx", "MyInfo", 2, 2))
+        self.do_sendKeys(self.USERNAME, TestData.USERNAME)
         self.do_clear(self.PASSWORD)
-        self.do_sendKeys(self.PASSWORD, self.readData_fromExcel("D:\TestData.xlsx", "MyInfo", 3, 2))
+        self.do_sendKeys(self.PASSWORD, TestData.PASSWORD)
         self.do_click(self.LOGIN_BTN)
         self.do_click(self.USER_PROFILE)
 
@@ -43,13 +45,13 @@ class LoginPage(BasePage):
         self.do_clear(self.USERNAME)
         self.do_sendKeys(self.USERNAME, "")
         self.do_clear(self.PASSWORD)
-        self.do_sendKeys(self.PASSWORD, self.readData_fromExcel("D:\TestData.xlsx", "MyInfo", 3, 2))
+        self.do_sendKeys(self.PASSWORD, TestData.PASSWORD)
         self.do_click(self.LOGIN_BTN)
         self.get_element_text(self.ERROR_MSG)
 
     def do_blank_password(self):
         self.do_clear(self.USERNAME)
-        self.do_sendKeys(self.USERNAME, self.readData_fromExcel("D:\TestData.xlsx", "MyInfo", 2, 2))
+        self.do_sendKeys(self.USERNAME, TestData.USERNAME)
         self.do_clear(self.PASSWORD)
         self.do_sendKeys(self.PASSWORD, "")
         self.do_click(self.LOGIN_BTN)

@@ -4,12 +4,14 @@ from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.action_chains import ActionChains
 import openpyxl
 
+from Configuration.DataFromExcel import TestData
+
 
 class BasePage:
 
     def __init__(self, driver):
         self.driver = driver
-        self.driver.get(self.readData_fromExcel("D:\TestData.xlsx", "MyInfo", 1, 2))
+        self.driver.get(TestData.URL)
 
     def do_sendKeys(self, by_locator, text):
         WebDriverWait(self.driver, 20).until(EC.presence_of_element_located(by_locator)).send_keys(text)
@@ -31,9 +33,3 @@ class BasePage:
     def action_click(self, by_locator):
         element = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(by_locator))
         ActionChains(self.driver).move_to_element(element).click().perform()
-
-    def readData_fromExcel(self, file, sheetname, rownum, colnum):
-        workbook = openpyxl.load_workbook(file)
-        sheet = workbook[sheetname]
-        inputvalue = sheet.cell(row=rownum, column=colnum).value
-        return inputvalue

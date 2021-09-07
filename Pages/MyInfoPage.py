@@ -2,6 +2,8 @@ import time
 
 from selenium.webdriver.common.by import By
 import rpa
+
+from Configuration.DataFromExcel import TestData
 from Pages.BasePage import BasePage
 from Pages.HomePage import HomePage
 
@@ -32,6 +34,9 @@ class MyInfoPage(BasePage):
     MILITARY_SERVICE = (By.ID, "personal_txtMilitarySer")
     GENDER_MALE = (By.XPATH, "//li[@class='radio']/ul/li[1]/input")
     GENDER_FEMALE = (By.XPATH, "//li[@class='radio']/ul/li[2]/input")
+    MARTIAL_STATUS = (By.ID , "personal_cmbMarital")
+    NATIONALITY = (By.ID, "personal_cmbNation")
+    SMOKER = (By.NAME, "personal[chkSmokeFlag]")
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -64,21 +69,35 @@ class MyInfoPage(BasePage):
         self.do_click(HomePage.MY_INFO)
         self.do_click(self.EDIT_PROFILE_BUTTON)
         self.do_clear(self.FIRST_NAME)
-        self.do_sendKeys(self.FIRST_NAME, self.readData_fromExcel("D:\TestData.xlsx", "MyInfo", 8, 1))
+        self.do_sendKeys(self.FIRST_NAME, TestData.FIRST_NAME)
         self.do_clear(self.MIDDLE_NAME)
-        self.do_sendKeys(self.MIDDLE_NAME, self.readData_fromExcel("D:\TestData.xlsx", "MyInfo", 8, 2))
+        self.do_sendKeys(self.MIDDLE_NAME, TestData.MIDDLE_NAME)
         self.do_clear(self.LAST_NAME)
-        self.do_sendKeys(self.LAST_NAME, self.readData_fromExcel("D:\TestData.xlsx", "MyInfo", 8, 3))
+        self.do_sendKeys(self.LAST_NAME, TestData.LAST_NAME)
         self.do_clear(self.EMPLOYEE_ID)
-        self.do_sendKeys(self.EMPLOYEE_ID, self.readData_fromExcel("D:\TestData.xlsx", "MyInfo", 8, 4))
+        self.do_sendKeys(self.EMPLOYEE_ID, TestData.EMPLOYEE_ID)
         self.do_clear(self.OTHERS_ID)
-        self.do_sendKeys(self.OTHERS_ID, self.readData_fromExcel("D:\TestData.xlsx", "MyInfo", 8, 5))
+        self.do_sendKeys(self.OTHERS_ID, TestData.OTHERS_ID)
         self.do_clear(self.DRIVER_LICENSE_NUMBER)
-        self.do_sendKeys(self.DRIVER_LICENSE_NUMBER, self.readData_fromExcel("D:\TestData.xlsx", "MyInfo", 8, 6))
+        self.do_sendKeys(self.DRIVER_LICENSE_NUMBER, TestData.DRIVER_LICENSE_NUMBER)
         self.do_clear(self.SSN_NUMBER)
-        self.do_sendKeys(self.SSN_NUMBER, self.readData_fromExcel("D:\TestData.xlsx", "MyInfo", 8, 7))
+        self.do_sendKeys(self.SSN_NUMBER, TestData.SSN_NUMBER)
         self.do_clear(self.SIN_NUMBER)
-        self.do_sendKeys(self.SIN_NUMBER, self.readData_fromExcel("D:\TestData.xlsx", "MyInfo", 8, 7))
+        self.do_sendKeys(self.SIN_NUMBER, TestData.SIN_NUMBER)
         self.do_clear(self.MILITARY_SERVICE)
-        self.do_sendKeys(self.MILITARY_SERVICE, self.readData_fromExcel("D:\TestData.xlsx", "MyInfo", 8, 17))
+        self.do_sendKeys(self.MILITARY_SERVICE, TestData.MILITARY_SERVICE)
+        self.select_by_text(self.MARTIAL_STATUS, TestData.MARTIAL_STATUS)
+        self.select_by_text(self.NATIONALITY, TestData.NATIONALITY)
+
+        """Check Gender"""
+        if TestData.GENDER == "Male":
+            self.do_click(self.GENDER_MALE)
+        elif TestData.GENDER == "Female":
+            self.do_click(self.GENDER_FEMALE)
+        else:
+            print("Wrong Input")
+
+        """Check for Smoker"""
+        if TestData.SMOKER == "Yes":
+            self.do_click(self.SMOKER)
         # self.do_click(self.EDIT_PROFILE_BUTTON)
