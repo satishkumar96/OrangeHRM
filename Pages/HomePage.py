@@ -13,6 +13,7 @@ class HomePage(BasePage):
     PERFORMANCE = (By.ID, "menu__Performance")
     DIRECTORY = (By.ID, "menu_directory_viewDirectory")
     MAINTENANCE = (By.ID, "menu_maintenance_purgeEmployee")
+    BUZZ = (By.ID, "menu_buzz_viewBuzz")
 
     def __init__(self, driver):
         super().__init__(driver)

@@ -33,3 +33,8 @@ class BasePage:
     def action_click(self, by_locator):
         element = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(by_locator))
         ActionChains(self.driver).move_to_element(element).click().perform()
+
+    def handle_elements(self, by_locator):
+        elements = WebDriverWait(self.driver, 10).until(EC.presence_of_all_elements_located(by_locator))
+        for elem in elements:
+            print("\n", elem.text)

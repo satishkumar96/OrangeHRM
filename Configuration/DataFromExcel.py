@@ -28,3 +28,6 @@ class TestData:
     NATIONALITY = readData_fromExcel("D:\TestData.xlsx", "MyInfo", 8, 10)
     MILITARY_SERVICE = readData_fromExcel("D:\TestData.xlsx", "MyInfo", 8, 17)
     SMOKER = readData_fromExcel("D:\TestData.xlsx", "MyInfo", 8, 18)
+
+    """Buzz Data"""
+    UPDATE_STATUS = readData_fromExcel("D:\TestData.xlsx", "Buzz", 1, 2)

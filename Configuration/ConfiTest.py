@@ -14,4 +14,4 @@ def init_driver(request):
     driver.implicitly_wait(20)
     driver.maximize_window()
     yield
-    # driver.quit()
+    driver.quit()

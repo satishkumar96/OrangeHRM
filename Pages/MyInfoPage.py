@@ -100,4 +100,4 @@ class MyInfoPage(BasePage):
         """Check for Smoker"""
         if TestData.SMOKER == "Yes":
             self.do_click(self.SMOKER)
-        # self.do_click(self.EDIT_PROFILE_BUTTON)
+        self.do_click(self.EDIT_PROFILE_BUTTON)
