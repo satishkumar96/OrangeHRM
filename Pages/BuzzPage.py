@@ -47,7 +47,7 @@ class BuzzPage(BasePage):
         self.do_sendKeys(self.UPLOAD_IMAGE_TEXT, TestData.UPDATE_STATUS)
         self.do_click(self.UPLOAD_IMAGE_BUTTON)
         rpa.init(headless_mode=True)
-        rpa.type("C:\\Users\\SatishKumar\\PycharmProjects\\OrangeHRM\\element_Images\\firefox_upload.png",
+        rpa.type("C:\\Users\\SatishKumar\\PycharmProjects\\OrangeHRM\\element_Images\\File_Name.png",
                  "D:\\Test_Images\\48834.jpg[enter]")
         rpa.close()
         self.do_click(self.UPLOAD_IMAGE_POST_BUTTON)
