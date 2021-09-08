@@ -12,7 +12,7 @@ class BuzzPage(BasePage):
     UPDATE_STATUS = (By.NAME, "createPost[content]")
     POST_BUTTON = (By.ID, "postSubmitBtn")
     UPLOAD_IMAGE = (By.ID, "images-tab-label")
-    UPLOAD_IMAGE_TEXT = (By.NAME, "phototext")
+    UPLOAD_IMAGE_TEXT = (By.XPATH, '//*[@id="phototext"]')
     UPLOAD_IMAGE_BUTTON = (By.ID, "image-upload-button")
     UPLOAD_IMAGE_POST_BUTTON = (By.ID, "imageUploadBtn")
     RECENT_UPDATED_POST = (By.XPATH, "(//li[@class='singlePost'])[1]/div[1]/div[5]/div")
@@ -39,11 +39,15 @@ class BuzzPage(BasePage):
         print("\n", "POST UPDATED SUCCESSFULLY")
 
     def upload_images(self):
+        time.sleep(3)
         self.do_click(self.UPLOAD_IMAGE)
+        time.sleep(3)
+        self.do_click(self.UPLOAD_IMAGE_TEXT)
+        time.sleep(3)
         self.do_sendKeys(self.UPLOAD_IMAGE_TEXT, TestData.UPDATE_STATUS)
         self.do_click(self.UPLOAD_IMAGE_BUTTON)
         rpa.init(visual_automation=True, chrome_browser=False)
-        rpa.type("C:\\Users\\SatishKumar\\PycharmProjects\\OrangeHRM\\element_Images\\File_Name.png",
+        rpa.type("C:\\Users\\SatishKumar\\PycharmProjects\\OrangeHRM\\element_Images\\firefox_upload.png",
                  "D:\\Test_Images\\48834.jpg[enter]")
         rpa.close()
         self.do_click(self.UPLOAD_IMAGE_POST_BUTTON)
