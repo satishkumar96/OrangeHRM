@@ -2,7 +2,7 @@ import openpyxl
 
 
 def readData_fromExcel(sheetname, rownum, colnum):
-    file = "C:\\Users\\SatishKumar\\PycharmProjects\\OrangeHRM\\DataFile\\TestData.xlsx"
+    file = "C:\\Users\\Administrator.LAPTOP-NF5JOBP3\\PycharmProjects\\OrangeHRM_Automation\\DataFile\\TestData.xlsx"
     workbook = openpyxl.load_workbook(file)
     sheet = workbook[sheetname]
     inputvalue = sheet.cell(row=rownum, column=colnum).value

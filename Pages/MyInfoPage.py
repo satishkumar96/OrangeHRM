@@ -53,8 +53,9 @@ class MyInfoPage(BasePage):
         time.sleep(3)
         self.action_click(self.CHOOSE_FILE)
         rpa.init(visual_automation=True, chrome_browser=False)
-        rpa.type("C:\\Users\\SatishKumar\\PycharmProjects\\OrangeHRM\\element_Images\\File_Name.png",
-                 "C:\\Users\\SatishKumar\\Downloads\\jmeter.log[enter]")
+        rpa.type("C:\\Users\\Administrator.LAPTOP-NF5JOBP3\\PycharmProjects\\OrangeHRM_Automation\\element_Images"
+                 "\\File_Name.png",
+                 "C:\\Users\\Administrator.LAPTOP-NF5JOBP3\\PycharmProjects\\OrangeHRM_Automation\\DataFile\\jmeter.log[enter]")
         rpa.close()
         self.do_click(self.SAVE_ATTACHEMENT)
         print("\n", self.get_element_text(self.RECENT_UPLOAD_ATTACHEMENT))
