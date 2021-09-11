@@ -47,8 +47,9 @@ class BuzzPage(BasePage):
         self.do_sendKeys(self.UPLOAD_IMAGE_TEXT, TestData.UPDATE_STATUS)
         self.do_click(self.UPLOAD_IMAGE_BUTTON)
         rpa.init(headless_mode=True)
-        rpa.type("C:\\Users\\SatishKumar\\PycharmProjects\\OrangeHRM\\element_Images\\File_Name.png",
-                 "D:\\Test_Images\\48834.jpg[enter]")
+        rpa.type("C:\\Users\\Administrator.LAPTOP-NF5JOBP3\\PycharmProjects\\OrangeHRM_Automation\\element_Images\\File_Name.png",
+                 "C:\\Users\\Administrator.LAPTOP-NF5JOBP3\\PycharmProjects\\OrangeHRM_Automation\\DataFile\\"
+                 "spider-man-superhero-spider-man-into-the-spider-verse-miles-morales-wallpaper-preview.jpg[enter]")
         rpa.close()
         self.do_click(self.UPLOAD_IMAGE_POST_BUTTON)
         print("\n", self.get_element_text(self.RECENT_UPDATED_POST))
