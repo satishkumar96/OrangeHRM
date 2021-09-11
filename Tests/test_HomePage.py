@@ -9,5 +9,5 @@ class Test_HomePage(BaseTest):
         self.loginpage.do_valid_login()
         print("Check Elements clickable or not")
         self.homepage = HomePage(self.driver)
-        print("**************** Test to check Home Page Dashboard Elelemnt is clickable or not ************************)
+        print("**************** Test to check Home Page Dashboard Elelemnt is clickable or not ************************")
         self.homepage.click_elements()
