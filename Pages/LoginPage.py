@@ -5,17 +5,23 @@ from Pages.BasePage import BasePage
 
 
 class LoginPage(BasePage):
-
     USERNAME = (By.ID, "txtUsername")
     PASSWORD = (By.ID, "txtPassword")
     LOGIN_BTN = (By.ID, "btnLogin")
     USER_PROFILE = (By.ID, "welcome")
     LOGOUT = (By.XPATH, "//a[text()='Logout']")
     ERROR_MSG = (By.XPATH, "//div[@id='divLoginButton']/span")
+    COMPANY_LOGO = (By.XPATH, "//*[@id='divLogo']/img")
+    FORGOT_PASSWORD_LINK = (By.XPATH, "//div[@id='forgotPasswordLink']/a")
 
     def __init__(self, driver):
         super().__init__(driver)
 
+    def get_company_logo(self, LoginPageCompanyLogo):
+        self.get_image(self.COMPANY_LOGO, LoginPageCompanyLogo)
+
+    def get_forgot_password_link(self):
+        print("\n",self.get_link_value(self.FORGOT_PASSWORD_LINK))
 
     def do_valid_login(self):
         self.do_clear(self.USERNAME)
