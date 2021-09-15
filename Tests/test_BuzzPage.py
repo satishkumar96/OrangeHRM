@@ -14,14 +14,6 @@ class Test_BuzzPage(BaseTest):
         time.sleep(3)
         self.buzzpage.update_status()
 
-    def test_upload_images(self):
-        self.loginpage = LoginPage(self.driver)
-        self.loginpage.do_valid_login()
-        self.buzzpage = BuzzPage(self.driver)
-        print("\n", "************************* CHECKING UPLOAD IMAGES ************************************")
-        time.sleep(3)
-        self.buzzpage.upload_images()
-
     def test_delete_post(self):
         self.loginpage = LoginPage(self.driver)
         self.loginpage.do_valid_login()

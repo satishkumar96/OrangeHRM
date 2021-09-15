@@ -1,13 +1,9 @@
 import time
 
 from selenium.webdriver.common.by import By
-import rpa
-
 from Configuration.DataFromExcel import TestData
 from Pages.BasePage import BasePage
 from Pages.HomePage import HomePage
-
-
 class MyInfoPage(BasePage):
 
     BLOOD_TYPE = (By.NAME, "custom1")
@@ -51,12 +47,8 @@ class MyInfoPage(BasePage):
         self.do_click(HomePage.MY_INFO)
         self.do_click(self.ADD_ATTACHEMENT)
         time.sleep(3)
-        self.action_click(self.CHOOSE_FILE)
-        rpa.init(visual_automation=True, chrome_browser=False)
-        rpa.type("C:\\Users\\Administrator.LAPTOP-NF5JOBP3\\PycharmProjects\\OrangeHRM_Automation\\element_Images"
-                 "\\File_Name.png",
-                 "C:\\Users\\Administrator.LAPTOP-NF5JOBP3\\PycharmProjects\\OrangeHRM_Automation\\DataFile\\jmeter.log[enter]")
-        rpa.close()
+        self.do_sendKeys(self.CHOOSE_FILE, "C:\\Users\\Administrator.LAPTOP-NF5JOBP3\\PycharmProjects"
+                                           "\\OrangeHRM_Automation\\DataFile\\jmeter.log")
         self.do_click(self.SAVE_ATTACHEMENT)
         print("\n", self.get_element_text(self.RECENT_UPLOAD_ATTACHEMENT))
 
