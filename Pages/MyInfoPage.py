@@ -47,7 +47,7 @@ class MyInfoPage(BasePage):
         self.do_click(HomePage.MY_INFO)
         self.do_click(self.ADD_ATTACHEMENT)
         time.sleep(3)
-        self.do_sendKeys(self.CHOOSE_FILE, "C:\\Users\\SatishKumar\\PycharmProjects\\OrangeHRM_Automation\\DataFile\\jmeter.log")
+        self.do_sendKeys(self.CHOOSE_FILE, "C:/Users/SATISH/PycharmProjects/OrangeHRM_Automation/DataFile/jmeter.log")
         self.do_click(self.SAVE_ATTACHEMENT)
         print("\n", self.get_element_text(self.RECENT_UPLOAD_ATTACHEMENT))
 
