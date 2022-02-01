@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="dae6a574-e5bc-47ac-8910-65507ce47902" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Configuration/ConfiTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration/ConfiTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/MyInfoPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/MyInfoPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_BuzzPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_BuzzPage.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +27,27 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Python tests for test_BuzzPage.Test_BuzzPage" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="OrangeHRM" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_BuzzPage.Test_BuzzPage&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for test_BuzzPage.Test_BuzzPage" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

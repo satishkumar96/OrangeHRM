@@ -13,6 +13,7 @@ def init_driver(request):
     request.cls.driver = driver
     driver.implicitly_wait(100)
     driver.set_page_load_timeout(100)
+    driver.delete_all_cookies()
     driver.maximize_window()
     yield
     driver.quit()
