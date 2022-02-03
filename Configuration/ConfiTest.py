@@ -3,15 +3,16 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.firefox import GeckoDriverManager
-from webdriver_manager.microsoft import EdgeChromiumDriverManager
-
+from selenium.webdriver.firefox.service import Service as FirefoxService
 
 @pytest.fixture(params=["firefox","chrome"])
 def init_driver(request):
     if request.param == "chrome":
-        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+        service = Service(executable_path=ChromeDriverManager().install())
+        driver = webdriver.Chrome(service=service)
     if request.param == "firefox":
-        driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+        service = FirefoxService(executable_path=GeckoDriverManager().install())
+        driver = webdriver.Firefox(service=service)
     request.cls.driver = driver
     driver.implicitly_wait(100)
     driver.set_page_load_timeout(100)
