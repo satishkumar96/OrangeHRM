@@ -25,6 +25,12 @@ pipeline {
 
             post
             {
+
+            always
+            {
+                publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'HTML_Reports', reportFiles: 'AutomationReport.html', reportName: 'AutomationReport', reportTitles: 'OrangeHRM Automation Report'])
+            }
+
                 failure
                     {
                 emailext attachLog: true, attachmentsPattern: 'HTML_Reports/AutomationReport.html', body: '''Hello Everybody,
