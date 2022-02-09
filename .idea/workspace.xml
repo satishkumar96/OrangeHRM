@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dae6a574-e5bc-47ac-8910-65507ce47902" name="Changes" comment="few changes">
-      <change afterPath="$PROJECT_DIR$/Drivers/geckodriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML_Reports/AutomationReport.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/HTML_Reports/AutomationReport.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/HTML_Reports/assets/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Configuration/ConfiTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration/ConfiTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Reports/BuzzPageTestReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Reports/HomePageTestReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Reports/LoginPageTestReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Reports/MyInfoPageTestReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Reports/UserPageTestReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/test_BuzzPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_BuzzPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_Reports/AutomationReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Reports/AutomationReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/geckodriver.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +130,21 @@
       <option name="project" value="LOCAL" />
       <updated>1643892295283</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="few changes">
+      <created>1644400545850</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1644400545850</updated>
+    </task>
+    <task id="LOCAL-00008" summary="few changes">
+      <created>1644400672250</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1644400672250</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
