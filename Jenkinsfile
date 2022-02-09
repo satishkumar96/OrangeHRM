@@ -19,7 +19,7 @@ pipeline {
             steps
             {
                 bat 'pip install -r requirements.txt'
-                bat 'pytest -v -s -n=4'
+                bat 'pytest'
             }
         }
             }
