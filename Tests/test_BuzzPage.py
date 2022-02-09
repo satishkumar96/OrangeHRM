@@ -5,6 +5,7 @@ from Pages.LoginPage import LoginPage
 from Tests.BaseTest import BaseTest
 from Configuration.ConfiTest import init_driver
 
+
 class Test_BuzzPage(BaseTest):
     def test_update_status(self):
         self.loginpage = LoginPage(self.driver)
