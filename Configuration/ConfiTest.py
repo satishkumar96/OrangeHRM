@@ -8,7 +8,7 @@ from selenium.webdriver.firefox.service import Service as FirefoxService
 from webdriver_manager.chrome import ChromeDriverManager
 
 
-@pytest.fixture(params=["firefox", "chrome"])
+@pytest.fixture(params=["chrome", "firefox"])
 def init_driver(request):
     if request.param == "chrome":
         service = ChromeService(executable_path=ChromeDriverManager().install())

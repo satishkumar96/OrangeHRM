@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="dae6a574-e5bc-47ac-8910-65507ce47902" name="Changes" comment="few changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Configuration/ConfiTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration/ConfiTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_Reports/AutomationReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Reports/AutomationReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/geckodriver.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644406062740</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="few changes">
+      <created>1644407760479</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1644407760479</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
