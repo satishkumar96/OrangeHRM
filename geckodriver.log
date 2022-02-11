@@ -9822,3 +9822,18 @@ JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeE
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1644557090749	geckodriver	INFO	Listening on 127.0.0.1:49878
+1644557093806	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49879" "-no-remote" "-profile" "C:\\Users\\SATISH\\AppData\\Local\\Temp\\rust_mozprofileEkWLhv"
+1644557095330	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\SATISH\\AppData\\Local\\Temp\\rust_mozprofileEkWLhv\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49879/devtools/browser/abb1673c-ee89-4bd5-a24c-ca5a0900a250
+1644557108148	Marionette	INFO	Listening on port 49888
+1644557108542	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1644557220635	Marionette	INFO	Stopped listening on port 49888
+
+###!!! [Parent][RunMessage] Error: Channel closing: too la1644557224632	mozrunner::runner	INFO	Running command: "C:\\P1644557226668	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50078" "-no-remote" "-profile" "C:\\1644557227003	Marionette	INFO	Marionette enabled
+leU7853E"
+1644557227625	Marionette	INFO	Marionette enabled
