@@ -35,6 +35,7 @@ pipeline {
                     {
                 emailext attachLog: true, attachmentsPattern: 'HTML_Reports/AutomationReport.html', body: '''Hello Everybody,
 The execution of Orange HRM Automation Testing has failed. We are looking into the issue and would re-run the automation job upon rectifying the issue.
+
 Regards,
 QA Team''', subject: '[$BUILD_STATUS] - $PROJECT_NAME - Build # $BUILD_NUMBER ($BUILD_ID)', to: 'sk.kumar805@gmail.com'
             }
