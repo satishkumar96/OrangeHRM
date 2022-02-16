@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dae6a574-e5bc-47ac-8910-65507ce47902" name="Changes" comment="few changes">
+      <change afterPath="$PROJECT_DIR$/archive/output_1645016603.9712324.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/output_1645016605.1952033.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/output_1645016606.7161362.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/output_1645016606.7317536.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pytest_html_report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML_Reports/AutomationReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Reports/AutomationReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/geckodriver.log" afterDir="false" />
@@ -242,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644826751682</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="few changes">
+      <created>1644833437428</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1644833437428</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
